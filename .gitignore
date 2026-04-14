@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+gphoto_downloads/
+gphoto2/
+gphoto3/
+ocr_txt/
+ocr_txt2/
+ocr_txt3/
+Photos-3-001_all/
+Photos-3-001_all.zip
+*.docx

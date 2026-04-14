@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(pip install:*)",
+      "Read(//tmp/**)",
+      "Read(//home/pk/**)",
+      "Bash(echo:*)",
+      "Bash(pip show:*)",
+      "Bash(curl:*)",
+      "Bash(gallery-dl:*)",
+      "Bash(source:*)",
+      "Bash(export:*)",
+      "Bash(grep:*)",
+      "Bash(shuf:*)",
+      "Bash(find /mnt/c/Users/krolp/Downloads/cc_Proroczy -name *.txt -name require*)",
+      "Bash(pip3 install:*)"
+    ]
+  }
+}
