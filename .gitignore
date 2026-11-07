@@ -10,3 +10,17 @@ ocr_txt3/
 Photos-3-001_all/
 Photos-3-001_all.zip
 *.docx
+
+# audiobook: materialy chronione prawem autorskim i artefakty, nie do publicznego repo
+audiobook/text/
+audiobook/patches/
+audiobook/mp3/
+audiobook/video/
+audiobook/cover/
+audiobook/samples/
+audiobook/shots/
+audiobook/*.log
+audiobook/uploaded.json
+audiobook/voices_raw.json
+audiobook/yt_explore.py
+audiobook/yt_playlist.py
