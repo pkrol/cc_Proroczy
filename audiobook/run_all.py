@@ -9,9 +9,14 @@ import generate as g
 
 ROOT = g.ROOT
 def sub():
-    r = urllib.request.Request("https://api.elevenlabs.io/v1/user/subscription", headers={"xi-api-key": g.K})
-    d = json.load(urllib.request.urlopen(r, timeout=60))
-    return d["character_limit"] - d["character_count"], d["next_character_count_reset_unix"]
+    for i in range(10):
+        try:
+            r = urllib.request.Request("https://api.elevenlabs.io/v1/user/subscription", headers={"xi-api-key": g.K})
+            d = json.load(urllib.request.urlopen(r, timeout=60))
+            return d["character_limit"] - d["character_count"], d["next_character_count_reset_unix"]
+        except Exception as e:
+            print("sub() blad, ponawiam:", e, flush=True); time.sleep(30)
+    raise RuntimeError("subscription niedostepne")
 
 def video(stem):
     out = ROOT / "video" / f"{stem}.mp4"
